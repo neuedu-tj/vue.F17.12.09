@@ -1,0 +1,16 @@
+{
+  "name": "vue.f17.12.09",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "vue": "^2.5.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jm",
+  "license": "ISC"
+}

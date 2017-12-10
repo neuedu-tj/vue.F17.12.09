@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>baisic</title>
+</head>
+<body>
+    <br><br>
+
+    <div id="app" class="container-fluid bg-info" >
+        <input type="text" id="msg" v-model="msg">
+        <br><br>
+        <input type="button" @click="get" value="get text filed content" class="btn btn-info">
+        <hr>
+        <div class="bg-success text-sm" v-text="msg"></div>
+     
+    </div>
+
+</body>
+</html>
+
+<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+
+
+<script src="../node_modules/vue/dist/vue.min.js" charset="utf-8"></script>
+<script src="../node_modules/vue-resource/dist/vue-resource.js" charset="utf-8"></script>
+
+
+<script>
+
+    var vm = new Vue({
+        el : "#app" ,
+        data : {
+            msg : ''
+        } ,
+        methods : {
+            get : function(e) {
+                console.log(this.msg)
+            }
+
+        } ,
+        mounted : function() {
+            this.$nextTick(function(){
+                this.msg = 'init data , please change it'
+            })
+        }
+
+
+    })
+
+</script>
