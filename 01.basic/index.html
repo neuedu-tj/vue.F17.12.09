@@ -8,11 +8,13 @@
     <br><br>
 
     <div id="app" class="container-fluid bg-info" >
+        <br>
         <input type="text" id="msg" v-model="msg">
         <br><br>
         <input type="button" @click="get" value="get text filed content" class="btn btn-info">
         <hr>
-        <div class="bg-success text-sm" v-text="msg"></div>
+        <div class="bg-success" v-text="msg"></div>
+        <br>
      
     </div>
 

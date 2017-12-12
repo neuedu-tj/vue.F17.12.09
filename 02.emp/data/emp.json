@@ -1,4 +1,4 @@
 [
-  {"id":101 ,"name":"iphonex", "price" : 8399 , "amount" : 2} ,
-  {"id":102 , "name" : "mui 5" , "price" : 3500 , "amount" : 4}
+  {"id":101 ,"name":"vue", "salary" : 8399 , "photo" : "../img/vue.jpg"} ,
+  {"id":102 , "name" : "spring-boot" , "salary" : 3500 , "photo" : "../img/spring-boot.png"}
 ]
