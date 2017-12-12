@@ -10,30 +10,38 @@
     <br>
     <div id="app" class="container-fluid">
 
-      <a href="#" @click="getEmps" class="btn btn-primary">Get Emps Data</a>
-      <br><br>
 
-      <table class="table table-bordered table-hover ">
-          <tr class="column-heading info">
+        <div class="input-group col-md-2 col-xs-12">
+            <input type="text" class="form-control" placeholder="id" v-model="emp.id">
+            <input type="text" class="form-control" placeholder="name" v-model="emp.name">
+            <input type="text" class="form-control" placeholder="salary" v-model="emp.salary">
+            <input type="text" class="form-control" placeholder="photo" v-model="emp.photo">
+            <!--<input type="file" class="form-control" placeholder="photo">-->
+        </div>
+
+        <br>
+        <a href="#" @click="addEmp" class="btn btn-primary">Add Emp</a>
+        <a href="#" @click="getEmps" class="btn btn-primary">Get Emps Data</a>
+        <br><br>
+
+        <table class="table table-bordered table-hover ">
+            <tr class="column-heading info">
               <th>id</th>
               <th>name</th>
               <th>price</th>
               <th>img</th>
-          </tr>
+            </tr>
 
-          <tr v-for="emp in emps">
+            <tr v-for="emp in emps">
               <td v-text="emp.id"></td>
               <td v-text="emp.name"></td>
               <td v-text="emp.salary"></td>
               <td>
-                  <img v-bind:src="emp.photo" alt="" height="50px" width="50px">
+                  <img class="img-circle" v-bind:src="emp.photo" alt="" height="50px" width="50px">
               </td>
-          </tr>
-
-      </table>
-
-
-
+            </tr>
+        </table>
+        
     </div>
 
 
@@ -50,27 +58,4 @@
 <script src="../node_modules/vue/dist/vue.min.js" charset="utf-8"></script>
 <script src="../node_modules/vue-resource/dist/vue-resource.js" charset="utf-8"></script>
 
-<!--<script src="js/emp.js" charset="utf-8"></script>-->
-<script>
-
-  var vm_emps = new Vue({
-      el : '#app' ,
-      data : {
-          total : 0 ,
-          emps : []
-      } ,
-      mounted : function() {
-
-      } ,
-      methods : {
-          getEmps : function() {
-              var _this = this;
-            this.$http.get("data/emp.json").then(function(e){
-                _this.emps = e.data;
-            })
-          },
-      }
-
-  })
-
-</script>
+<script src="js/emp.js" charset="utf-8"></script>
