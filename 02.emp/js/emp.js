@@ -18,7 +18,7 @@ var vm = new Vue({
       console.log(this.$el.innerText)
     } ,
     cartView : function() {
-       this.message = 'Hello Vue 哈哈'
+       this.message = 'Hello Vue'
     }
 
   }
