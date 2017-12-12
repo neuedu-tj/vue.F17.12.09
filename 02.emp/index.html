@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <meta name="renderer" content="webkit">
+    <!--<meta name="renderer" content="webkit">-->
   </head>
   <body>
     <br>
@@ -23,8 +23,7 @@
 
           <tr v-for="emp in emps">
               <td v-text="emp.id"></td>
-              <td v-text="emp.na
-              me"></td>
+              <td v-text="emp.name"></td>
               <td v-text="emp.salary"></td>
               <td>
                   <img v-bind:src="emp.photo" alt="" height="50px" width="50px">
