@@ -1,0 +1,21 @@
+.flex {
+    display: flex;
+}
+
+.flow-x {
+    flex-flow: row nowrap;
+}
+
+.flow-y {
+    flex-flow : column nowrap;
+}
+
+.center-xy {
+    justify-content: center;
+    align-items: center;
+}
+
+
+.has-border {
+    border : solid 1px red;
+}

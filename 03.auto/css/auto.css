@@ -1,0 +1,49 @@
+
+#auto {
+    background-color: white;
+
+    width: 100%;
+    min-height: 120px;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.items {
+    width: 100%;
+    border-bottom: 1px whitesmoke solid;
+    height: 110px;
+
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+
+.left {
+    height: auto;
+    background-color: cadetblue;
+    width: 40px;
+
+    display: flex;
+    
+}
+
+.center {
+    height: 110px; width: 520px;
+}
+
+.center div{
+    height: 100px;
+    width: 100px;
+}
+.center div img {
+    height: 100%;
+    width: 100%;
+    /*background-position: center;*/
+    background-size: cover;
+}
+
+.right {
+    height: 100px;
+    flex: 1;
+}

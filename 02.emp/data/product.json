@@ -1,0 +1,59 @@
+{
+  "status" : 1 ,
+  "result" : {
+    "total" : 0 ,
+    "list" : [
+      {
+        "pid" : "1001" ,
+        "pname" : "Tesla ROADSTER" ,
+        "price" : 1768800 ,
+        "quentity" : 1 ,
+        "img" : [
+            "../img/product-auto/tesla-roadster-2018-01.jpg" ,
+            "../img/product-auto/tesla-roadster-2018-02.jpg"
+        ] ,
+        "gifts": [{
+          "gid" : "T-SN01",
+          "info" : "Charging pile"
+        }]
+
+      } ,
+      {
+        "pid" : "1002" ,
+        "pname" : "Porsher Panamera 4S" ,
+        "price" : 17800000 ,
+        "quentity" : 1 ,
+        "img" : [
+          "../img/product-auto/porsher-panamera-01.jpg" ,
+          "../img/product-auto/porsher-panamera-02.jpg"
+        ] ,
+        "gifts": [{
+          "gid" : "P-TXNA",
+          "info" : "brake caliper ; color : Red"
+        }]
+
+      } ,
+      {
+        "pid" : "1003" ,
+        "pname" : "AMG S63S 4MATIC" ,
+        "price" : 14000000 ,
+        "quentity" : 1 ,
+        "img" : [
+          "../img/product-auto/benz-amg-s63-01.jpg" ,
+          "../img/product-auto/benz-amg-s63-02.jpg"
+        ] ,
+        "gifts": [
+          {
+            "gid" : "AMG-G01",
+            "info" : "Ceramic Hill car plate ； color : yellow"
+          } ,
+          {
+            "gid" : "AMG-G37",
+            "info" : "Drive-AI"
+          }
+        ]
+
+      }
+    ]
+  }
+}

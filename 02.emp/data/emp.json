@@ -1,4 +1,4 @@
 [
-  {"id":101 ,"name":"vue", "salary" : 8399 , "photo" : "../img/vue.jpg"} ,
-  {"id":102 , "name" : "spring-boot" , "salary" : 3500 , "photo" : "../img/spring-boot.png"}
+  {"id":101 ,"name":"vue", "salary" : 8399.418 , "photo" : "../img/vue.jpg"} ,
+  {"id":102 , "name" : "spring-boot" , "salary" : 3500.28 , "photo" : "../img/spring-boot.png"}
 ]

@@ -2,15 +2,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title></title>
-    <!--<meta name="renderer" content="webkit">-->
+      <meta charset="utf-8">
+      <title></title>
+      <!--<meta name="renderer" content="webkit">-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
   </head>
   <body>
     <br>
-    <div id="app" class="container-fluid">
-
-
+    <div id="app" class="container-fluid" >
+        
         <div class="input-group col-md-2 col-xs-12">
             <input type="text" class="form-control" placeholder="id" v-model="emp.id">
             <input type="text" class="form-control" placeholder="name" v-model="emp.name">
@@ -22,6 +25,15 @@
         <br>
         <a href="#" @click="addEmp" class="btn btn-primary">Add Emp</a>
         <a href="#" @click="getEmps" class="btn btn-primary">Get Emps Data</a>
+        <a href="#" @click="calculate" class="btn btn-primary">Calculate</a>
+
+        <br><br>
+        <div v-if="total==0"></div>
+        <div v-if="total!=0">
+            <div class="bg-info" v-text="total"></div>
+        </div>
+
+
         <br><br>
 
         <table class="table table-bordered table-hover ">
@@ -35,13 +47,13 @@
             <tr v-for="emp in emps">
               <td v-text="emp.id"></td>
               <td v-text="emp.name"></td>
-              <td v-text="emp.salary"></td>
+              <td>{{ emp.salary | fmtCurrency }}</td>
               <td>
                   <img class="img-circle" v-bind:src="emp.photo" alt="" height="50px" width="50px">
               </td>
             </tr>
         </table>
-        
+
     </div>
 
 
