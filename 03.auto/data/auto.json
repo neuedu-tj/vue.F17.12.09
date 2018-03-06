@@ -21,7 +21,7 @@
       {
         "pid" : "1002" ,
         "pname" : "Porsher Panamera 4S" ,
-        "price" : 17800000 ,
+        "price" : 1780000 ,
         "quentity" : 1 ,
         "img" : [
           "../img/product-auto/porsher-panamera-01.jpg" ,
@@ -36,7 +36,7 @@
       {
         "pid" : "1003" ,
         "pname" : "AMG S63S 4MATIC" ,
-        "price" : 14000000 ,
+        "price" : 1400000 ,
         "quentity" : 1 ,
         "img" : [
           "../img/product-auto/benz-amg-s63-01.jpg" ,

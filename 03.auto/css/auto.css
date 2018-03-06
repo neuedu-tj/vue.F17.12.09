@@ -11,17 +11,19 @@
 
 .items {
     width: 100%;
+    border-top: 1px whitesmoke solid;
     border-bottom: 1px whitesmoke solid;
     height: 110px;
 
     display: flex;
     flex-flow: row nowrap;
+    margin-bottom: 10px;
 
 }
 
 .left {
     height: auto;
-    background-color: cadetblue;
+    /*background-color: cadetblue;*/
     width: 40px;
 
     display: flex;
@@ -29,21 +31,26 @@
 }
 
 .center {
-    height: 110px; width: 520px;
+    height: 110px; width: 240px;
+    border-left: 5px gray solid;
 }
 
 .center div{
     height: 100px;
     width: 100px;
-}
-.center div img {
-    height: 100%;
-    width: 100%;
-    /*background-position: center;*/
+
+    border-radius: 20%;
+    margin-right: 10px;
+    background-position: center;
     background-size: cover;
+    /*background-repeat: no;*/
 }
 
 .right {
-    height: 100px;
+    height: 110px;
+    flex: 1;
+}
+
+.right div {
     flex: 1;
 }
