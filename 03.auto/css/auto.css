@@ -11,8 +11,7 @@
 
 .items {
     width: 100%;
-    border-top: 1px whitesmoke solid;
-    border-bottom: 1px whitesmoke solid;
+    border: 1px whitesmoke solid;
     height: 110px;
 
     display: flex;
@@ -27,30 +26,102 @@
     width: 40px;
 
     display: flex;
+    flex : 1;
     
 }
 
+
+.check {
+    height: 30px; width: 30px;
+    background: url("../../img/product-auto/auto/chk-normal.svg") center;
+    background-size: contain;
+}
+.checked {
+    height: 30px; width: 30px;
+    background: url("../../img/product-auto/auto/chk-checked.svg") center;
+    background-size: contain;
+}
+
+
+
+
 .center {
-    height: 110px; width: 240px;
-    border-left: 5px gray solid;
+    height: 110px; flex : 4;
+    /*border-left: 1px gray solid;*/
 }
 
 .center div{
     height: 100px;
     width: 100px;
 
-    border-radius: 20%;
+    border-radius: 6%;
     margin-right: 10px;
     background-position: center;
     background-size: cover;
-    /*background-repeat: no;*/
+    box-shadow: 0px 0px 6px 1px grey;
 }
 
 .right {
     height: 110px;
-    flex: 1;
+    max-width: 50%;
+    flex: 12;
 }
 
 .right div {
     flex: 1;
 }
+
+.pname {
+    font-size: 20px;
+    color: #212121;
+}
+.detail {
+    color : #1e88e5;
+    font-weight: 200;
+    padding-right: 20px;
+}
+.price {
+    color: #ff6f00;
+    font-size: 12px;
+    display: flex; align-items: flex-end;
+    vertical-align: baseline;
+}
+
+.control {
+    flex:5;
+}
+
+.control div{
+    flex:1
+}
+
+.control input[type=text] {
+    height: 26px;
+    width: 26px;
+}
+.control input[type=button] {
+    width: 26px;
+    height: 26px;
+    background-color: #b4e5fc;
+    border-radius: 2px;
+    border: none;
+}
+.control img {
+    height: 20px; width: 20px;
+}
+
+
+
+/* ***** */
+/*----------------*/
+.confirm {
+    position: fixed;
+    height: 100px; width: 300px;
+    left: 40%;top:40%;
+    
+    
+    background-color: grey; opacity:.9;
+}
+
+
+

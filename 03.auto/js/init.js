@@ -1,5 +1,5 @@
-// $(function () {
-//     $('.auto-img').each(function() {
-//        $(this).css('background-image' , 'url('+$(this).data("img")+')')
-//     });
-// });
+$(function (){
+    $('.auto-img').each(function() {
+        $(this).css('background-image' , 'url('+$(this).data("img")+')')
+    });
+});

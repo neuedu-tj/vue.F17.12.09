@@ -6,8 +6,9 @@
       {
         "pid" : "1001" ,
         "pname" : "Tesla ROADSTER" ,
-        "price" : 1768800 ,
-        "quentity" : 1 ,
+        "price" : 100   ,  
+        "detail" : "The quickest car in the world, with record-setting acceleration, range and performance.",
+        "quantity" : 1 ,
         "img" : [
             "../img/product-auto/tesla-roadster-2018-01.jpg" ,
             "../img/product-auto/tesla-roadster-2018-02.jpg"
@@ -21,8 +22,9 @@
       {
         "pid" : "1002" ,
         "pname" : "Porsher Panamera 4S" ,
-        "price" : 1780000 ,
-        "quentity" : 1 ,
+        "price" : 200,
+        "detail" : "3.0 liter turbo V6 producing 330 hp and 331 lb.- ft. 8-speed Porsche Doppelkupplung (PDK) with Auto Start Stop function",
+        "quantity" : 1 ,
         "img" : [
           "../img/product-auto/porsher-panamera-01.jpg" ,
           "../img/product-auto/porsher-panamera-02.jpg"
@@ -36,8 +38,9 @@
       {
         "pid" : "1003" ,
         "pname" : "AMG S63S 4MATIC" ,
-        "price" : 1400000 ,
-        "quentity" : 1 ,
+        "price" : 300   ,
+        "detail" : "Two men with a passion for motorsport and engineering founded AMG. Hans Werner Aufrecht and Erhard Melcher saw an opportunity on every wide open road, an invitation in every curve, an affirmation in every victory: for more performance and more power.",
+        "quantity" : 1 ,
         "img" : [
           "../img/product-auto/benz-amg-s63-01.jpg" ,
           "../img/product-auto/benz-amg-s63-02.jpg"

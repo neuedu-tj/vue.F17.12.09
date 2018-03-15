@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Markdown</title>
+</head>
+<body>
+
+    <textarea id="md" onchange="this.editor.update()">
+                    ##MarkDown here##
+
+    </textarea>
+    <hr>
+
+    <div id="preview" style="height: 200px; width: 400px; border: 1px red solid;"> </div>
+
+</body>
+</html>
+
+<!--<script src="../node_modules/markdown/bin/md2html.js"></script>-->
+<script src="../node_modules/markdown/lib/markdown.js"></script>
+
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+
+<script>
+
+    function Editor(input , preview) {
+        this.update = function ()  {
+            preview.innerHTML = markdown.toHTML(input.value);
+        };
+        input.editor = this;
+        this.update();
+    }
+
+     new Editor(document.getElementById("md") , document.getElementById("preview") )
+
+
+
+</script>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 
     <meta charset="UTF-8">
@@ -12,43 +12,96 @@
     <link rel="stylesheet" href="css/auto.css">
     <link rel="stylesheet" href="css/common.css">
 
+
+
 </head>
 <body>
-<br><br><br><br><br>
-<div class="container-fluid">
+<br>
+<div class="container">
+
+    
+
+    <div class="tip">Auto BuyCart ( Vue )</div>
+
+    <hr>
     
     <div id="auto">
+        
+        <div class="col-xs-12 x-end flex">
+            <button class="btn btn-warning"  type="button">
+                BuyCart <span class="badge">{{storage.length}}</span>
+            </button>
+        </div>
+        <br>
 
-        <!--<p v-text="storage"></p>-->
 
         <div class="items flex flex-x" v-for="auto in storage">
 
-                <div class="left flex flow-x center-xy">
-                    <input type="checkbox">
+            <div class="confirm flex x-around y-center " v-if="dialogFlag">
+                <a href="#" class="btn btn-danger  active" role="button" @click="removeHandler(auto)">Confirm</a>
+                <a href="#" class="btn btn-warning  active" role="button" @click="showDialog()">Cancel</a>
+            </div>
+
+
+            
+
+            <div class="left flex flow-x center-xy" >
+                <div class="check" :class="{'checked': auto.checked}" @click="confirmOption(auto)"></div>
+            </div>
+
+            <div class="center flex center-xy ">
+                <div class="auto-img flex center-xy flow-x" :data-img="auto.img[0]">
                 </div>
 
-                <div class="center flex center-xy ">
-                    <div class="auto-img flex center-xy flow-x" v-bind:data-img="auto.img[0]">
-                    </div>
-
-                    <div class="auto-img flex center-xy flow-x" v-bind:data-img="auto.img[1]">
-                    </div>
+                <div class="auto-img flex center-xy flow-x" :data-img="auto.img[1]">
                 </div>
+            </div>
 
-                <div class="right flex flow-y">
-                    <div>name : {{auto.pname}}</div>
-                    <div>desc : </div>
-                    <div>price : {{auto.price}}</div>
+            <div class="right flex flow-y ">
+                <div class="pname">{{auto.pname}}</div>
+                <div class="detail">{{auto.detail}}</div>
+                <div class="price">{{auto.price|fmtPrice}}</div>
 
+            </div>
+
+            <div class="control flex center-xy ">
+                <div>
+                    <a href="javascript:" @click="updateQuantity(auto , -1)">
+                        <img src="../img/product-auto/auto/remove_circle.svg" alt="">
+                    </a>
+                    <!--<input value="-" type="button" >-->
+                    <input size="5" type="text" v-model="auto.quantity">
+
+                    <a href="javascript:" @click="updateQuantity(auto , 1)">
+                        <img src="../img/product-auto/auto/add.svg" alt="">
+                    </a>
                 </div>
+                <div style="color: #ff6f00">{{auto.quantity * auto.price | fmtPrice}}</div>
+
+                <div class="" @click="showDialog(auto)"><img class="" src="../img/product-auto/auto/remove.svg" /> </div>
+            </div>
 
         </div>
 
 
+        <div >
+            <div class="col-lg-9">
 
+            </div>
+            <div class="col-lg-3 flex center-xy">
+                <div >Total Price : {{sum}} &nbsp;&nbsp;&nbsp;&nbsp;</div>
 
+                <div class="check" :class="{'checked':selectAllFlag}" @click="selectAll"></div> &nbsp;&nbsp;&nbsp;
+
+                <div class="btn btn-info">Orders</div>
+            </div>
+        </div>
 
     </div>
+
+
+    <hr>
+
 </div>
 
 </body>
@@ -58,10 +111,12 @@
 
 
 <script src="../node_modules/jquery/dist/jquery.js"></script>
-<script src="js/init.js"></script>
+
 
 <script src="../node_modules/vue/dist/vue.min.js" charset="utf-8"></script>
 <script src="../node_modules/vue-resource/dist/vue-resource.js" charset="utf-8"></script>
 
-
+<script src="js/init.js"></script>
 <script src="js/auto.js" charset="utf-8"></script>
+
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"/>
