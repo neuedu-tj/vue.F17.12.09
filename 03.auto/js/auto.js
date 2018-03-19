@@ -79,6 +79,8 @@ var vm = new Vue({
             console.log("index : " + index );
             // this.storage.$delete(this.tempAuto)         // vue1.0
             this.storage.splice(index , 1);
+
+            this.calculteTotalPrice();
             
         }
 

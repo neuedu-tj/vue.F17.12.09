@@ -9,6 +9,9 @@
 .flow-y {
     flex-flow : column nowrap;
 }
+.flow-x-wrap{
+    flex-flow: row wrap;
+}
 
 .center-xy {
     justify-content: center;

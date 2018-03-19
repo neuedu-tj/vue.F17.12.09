@@ -9,8 +9,9 @@
     <title>auto buycart</title>
 
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="css/auto.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/auto.css">
+
 
 
 
@@ -50,10 +51,10 @@
             </div>
 
             <div class="center flex center-xy ">
-                <div class="auto-img flex center-xy flow-x" :data-img="auto.img[0]">
+                <div class="auto-img flex center-xy flow-x" :style="{backgroundImage: 'url(' + auto.img[0] + ')'}">
                 </div>
 
-                <div class="auto-img flex center-xy flow-x" :data-img="auto.img[1]">
+                <div class="auto-img flex center-xy flow-x" :style="{backgroundImage: 'url(' + auto.img[1] + ')'}">
                 </div>
             </div>
 

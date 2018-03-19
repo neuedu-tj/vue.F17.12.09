@@ -1,0 +1,49 @@
+{
+
+  "status" : 0,
+  "msg" : "" ,
+  "result" : [
+    {
+      "addrId" : "1001" ,
+      "consignee" : "Tom" ,
+      "postCode" : "300100" ,
+      "street" : "天津市南开区鼓楼商业街新隆轩1-1",
+      "tel" : "13712348765" ,
+      "isDefault" : false
+    },
+    {
+      "addrId" : "1002" ,
+      "consignee" : "Jack" ,
+      "postCode" : "300380" ,
+      "street" : "天津市东丽区空港经济区西七道东软大厦",
+      "tel" : "13712348765" ,
+      "isDefault" : true
+    },
+    {
+      "addrId" : "1003" ,
+      "consignee" : "Jerry" ,
+      "postCode" : "300100" ,
+      "street" : "天津市河西区新八里北大资源2-23-02",
+      "tel" : "13712348765" ,
+      "isDefault" : false
+    },
+    {
+      "addrId" : "1004" ,
+      "consignee" : "Alex" ,
+      "postCode" : "300100" ,
+      "street" : "天津市和平区翰林公馆4-30-2",
+      "tel" : "13712348765" ,
+      "isDefault" : false
+    },
+    {
+      "addrId" : "1005" ,
+      "consignee" : "Kevin" ,
+      "postCode" : "300100" ,
+      "street" : "天津市西青区工业大学软件学院C402",
+      "tel" : "13712348765" ,
+      "isDefault" : false
+    }
+  ]
+
+
+}

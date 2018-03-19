@@ -1,0 +1,21 @@
+
+#header {
+    height: 100px;
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+    padding: 20px;
+    color: grey;
+    font-size: 20px;
+}
+
+
+.addr-item {
+    height: 200px;
+    width: 260px;
+    border: 1px gainsboro solid;
+    margin: 10px;
+    padding: 10px;
+}
+.addr-item-default {
+    border: 1px #ff6f00 solid; 
+}

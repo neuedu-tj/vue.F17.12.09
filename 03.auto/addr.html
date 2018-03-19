@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+
+    <title>addr</title>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+
+    <link rel="stylesheet" href="css/addr.css">
+
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div id="header">Addr</div>
+
+        <div id="addr" class="process flex flow-x-wrap">
+            <!--<div>{{addrs}}</div>-->
+
+            <div class="addr-item" :class="{ 'addr-item-default': addr.isDefault }" v-for="addr in addrs">
+                <div>{{addr.consignee }}</div>
+                <hr>
+                <div>地址 : {{addr.street}}</div>
+                <div>邮编 : {{addr.postCode}}</div>
+                <div>电话 : {{addr.tel}}</div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+
+
+<script src="../node_modules/vue/dist/vue.min.js" charset="utf-8"></script>
+<script src="../node_modules/vue-resource/dist/vue-resource.js" charset="utf-8"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"/>
+
+
+<script src="js/addr.js" charset="utf-8"></script>
+
